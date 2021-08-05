@@ -1,0 +1,40 @@
+{
+  "name": "verify-tc",
+  "description": "Verify Turkish Citizenship Number",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "author": {
+    "name": "Mahmut Can CINGI",
+    "email": "me@mahmutcan.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cancng/verify-tc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cancng/verify-tc/issues",
+    "email": "me@mahmutcan.dev"
+  },
+  "keywords": [
+    "turkish citizenship number",
+    "türk vatandaşlık numarası",
+    "tc no",
+    "tc kimlik"
+  ],
+  "scripts": {
+    "dev": "ts-node-dev --tree-kill --no-notify --respawn --exit-child src/index.ts",
+    "start": "node dist/index",
+    "clean": "rm -rf dist",
+    "build": "npm -s run clean && tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^16.4.12",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "soap": "^0.40.0"
+  }
+}
