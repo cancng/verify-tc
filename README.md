@@ -2,6 +2,14 @@
 
 This library can verify the Turkish citizenship number. `verifyTC` function returns a boolean value.
 
+```
+# with yarn
+yarn add verify-tc
+
+# with npm
+npm install verify-tc
+```
+
 ## Example
 
 ```js
